@@ -1,0 +1,44 @@
+/* Project Pulse styles */
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --success:#16a34a;
+  --warning:#f59e0b;
+  --danger:#ef4444;
+  --radius:12px;
+  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+}
+
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#0f172a; margin:0; padding:24px;}
+.header{max-width:1100px;margin:0 auto 16px;padding:8px 0}
+.header h1{margin:0;font-size:1.5rem;letter-spacing:0.2px}
+
+.dashboard{max-width:1100px;margin:0 auto;display:grid;gap:18px;grid-template-columns:repeat(3,1fr);align-items:start}
+
+.project-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;border:1px solid rgba(2,6,23,0.04);}
+.project-card .project-name{margin:0 0 8px;font-size:1.05rem}
+.project-card .project-meta{margin:6px 0;color:var(--muted);font-size:0.92rem}
+.project-card .project-priority{margin-top:10px;font-weight:600}
+
+.status{padding:4px 8px;border-radius:8px;font-size:0.85rem;color:#fff}
+.status:contains("on-track"){background:var(--success)}
+
+/* simple priority color hints */
+.project-card .project-priority{display:inline-block;padding:6px 8px;border-radius:8px}
+.project-card .project-priority:contains("High"){background:var(--danger);color:#fff}
+.project-card .project-priority:contains("Medium"){background:var(--warning);color:#000}
+.project-card .project-priority:contains("Low"){background:#e6eefb;color:var(--accent)}
+
+/* responsive */
+@media (max-width:900px){
+  .dashboard{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  .dashboard{grid-template-columns:1fr;padding:0 8px;gap:12px}
+  body{padding:16px}
+}
+
+/* utility */
+.loading,.empty,.error{color:var(--muted);text-align:center}

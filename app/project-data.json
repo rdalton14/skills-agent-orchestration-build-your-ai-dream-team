@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {"name":"Website Redesign","owner":"Mona","status":"on-track","recentActivity":"Updated wireframes","priority":"High"},
+    {"name":"Mobile App Launch","owner":"Ava","status":"at-risk","recentActivity":"API integration lagging","priority":"High"},
+    {"name":"CRM Migration","owner":"Liam","status":"delayed","recentActivity":"Data mapping review","priority":"Medium"},
+    {"name":"Marketing Campaign Q3","owner":"Noah","status":"on-track","recentActivity":"Assets approved","priority":"Low"},
+    {"name":"Customer Onboarding","owner":"Olivia","status":"at-risk","recentActivity":"Feedback loop opened","priority":"Medium"},
+    {"name":"Automation Scripts","owner":"Ethan","status":"on-track","recentActivity":"Tests passing","priority":"Low"}
+  ]
+}
